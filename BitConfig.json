@@ -1,0 +1,36 @@
+{
+  "TargetFramework": "net6.0",
+  "BitCodeGeneratorConfigs": {
+    "BitCodeGeneratorMappings": [
+      {
+        "Route": "App",
+        "DestinationFileName": "client/src/app/Boomrang.Model.Context",
+        "TypingsPath": "../../node_modules/@bit/jaydata/jaydata.d.ts",
+        "SourceProjects": [
+          {
+            "Name": "Boomrang.App"
+          },
+          {
+            "Name": "Boomrang.Model"
+          },
+          {
+            "Name": "Boomrang.Service"
+          }
+        ],
+        "DestinationProject": {
+          "Name": "Boomrang.App"
+        },
+        "NamespaceAliases": [
+          {
+            "Namespace": "Boomrang.Model.Dto",
+            "Alias": "BoomrangModel"
+          },
+          {
+            "Namespace": "Boomrang.Model.Enum",
+            "Alias": "BoomrangEnum"
+          }
+        ]
+      }     
+    ]
+  }
+}

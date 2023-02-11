@@ -1,0 +1,16 @@
+E:\Boomrang\Boomrang.Database\bin\Debug\Boomrang.Database.dacpac
+E:\Boomrang\Boomrang.Database\obj\Debug\Boomrang.Database.sqlproj.AssemblyReference.cache
+E:\Boomrang\Boomrang.Database\obj\Debug\Model.xml
+E:\Boomrang\Boomrang.Database\obj\Debug\refactor.xml
+E:\Boomrang\Boomrang.Database\obj\Debug\postdeploy.sql
+E:\Boomrang\Boomrang.Database\obj\Debug\predeploy.sql
+E:\Boomrang\Boomrang.Database\obj\Debug\Boomrang.Database.dll
+E:\Boomrang\Boomrang.Database\obj\Debug\Boomrang.Database.pdb
+C:\workSpace\boomerang\Boomrang.Database\bin\Debug\Boomrang.Database.dacpac
+C:\workSpace\boomerang\Boomrang.Database\obj\Debug\Boomrang.Database.sqlproj.AssemblyReference.cache
+C:\workSpace\boomerang\Boomrang.Database\obj\Debug\Model.xml
+C:\workSpace\boomerang\Boomrang.Database\obj\Debug\refactor.xml
+C:\workSpace\boomerang\Boomrang.Database\obj\Debug\postdeploy.sql
+C:\workSpace\boomerang\Boomrang.Database\obj\Debug\predeploy.sql
+C:\workSpace\boomerang\Boomrang.Database\obj\Debug\Boomrang.Database.dll
+C:\workSpace\boomerang\Boomrang.Database\obj\Debug\Boomrang.Database.pdb

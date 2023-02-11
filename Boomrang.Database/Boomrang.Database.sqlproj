@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <Name>Boomrang.Database</Name>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>4.1</ProjectVersion>
+    <ProjectGuid>{8c3b4b77-ef10-46ae-9b84-d5f1f415fba6}</ProjectGuid>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql130DatabaseSchemaProvider</DSP>
+    <OutputType>Database</OutputType>
+    <RootPath>
+    </RootPath>
+    <RootNamespace>Boomrang.Database</RootNamespace>
+    <AssemblyName>Boomrang.Database</AssemblyName>
+    <ModelCollation>1033, CI</ModelCollation>
+    <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
+    <DeployToDatabase>True</DeployToDatabase>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetLanguage>CS</TargetLanguage>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <SqlServerVerification>False</SqlServerVerification>
+    <IncludeCompositeObjects>True</IncludeCompositeObjects>
+    <TargetDatabaseSet>True</TargetDatabaseSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <!-- Default to the v11.0 targets path if the targets file for the current VS version is not found -->
+    <SSDTExists Condition="Exists('$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets')">True</SSDTExists>
+    <VisualStudioVersion Condition="'$(SSDTExists)' == ''">11.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Condition="'$(SQLDBExtensionsRefPath)' != ''" Project="$(SQLDBExtensionsRefPath)\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <ItemGroup>
+    <Folder Include="Properties" />
+    <Folder Include="Boomrang" />
+    <Folder Include="Boomrang\Tables" />
+    <Folder Include="Boomrang\Stored Procedures" />
+    <Folder Include="Boomrang\Function" />
+    <Folder Include="Boomrang\User Defined Types" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="Boomrang\Tables\User.sql" />
+    <Build Include="Boomrang\Stored Procedures\MspRegisterOperator.sql" />
+    <Build Include="Boomrang\Tables\Province.sql" />
+    <Build Include="Boomrang\Tables\City.sql" />
+    <Build Include="Boomrang\Tables\ActivityField.sql" />
+    <Build Include="Boomrang\Tables\ProficiencyField.sql" />
+    <Build Include="Boomrang\Tables\Admin.sql" />
+    <Build Include="Boomrang\Tables\Operator.sql" />
+    <Build Include="Boomrang\Stored Procedures\MspLoginUser.sql" />
+    <Build Include="Boomrang\Tables\Company.sql" />
+    <Build Include="Boomrang\Function\FnGetUsersInfo.sql" />
+    <Build Include="Boomrang\Function\FnGetProvinces.sql" />
+    <Build Include="Boomrang\Function\FnGetCities.sql" />
+    <Build Include="Boomrang\Tables\CompanyProduct.sql" />
+    <Build Include="Boomrang\Function\FnGetProficiencyField.sql" />
+    <Build Include="Boomrang\Function\FnGetActivityField.sql" />
+    <Build Include="Boomrang\User Defined Types\TpCompanyProduct.sql" />
+    <Build Include="Boomrang\Stored Procedures\MspSaveCompanyInformation.sql" />
+    <Build Include="Boomrang\Stored Procedures\MspGetCompanyInformation.sql" />
+    <Build Include="Boomrang\Stored Procedures\MspGetUsersInfo.sql" />
+  </ItemGroup>
+</Project>

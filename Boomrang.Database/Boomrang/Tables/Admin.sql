@@ -1,0 +1,14 @@
+﻿CREATE TABLE [dbo].[Admin]
+(
+	Id				UNIQUEIDENTIFIER	NOT NULL PRIMARY KEY,
+	UserName		NVARCHAR(50)		NULL,
+	[Password]		NVARCHAR(200)		NULL,
+	FirstName		NVARCHAR(50)		NULL,
+	LastName		NVARCHAR(50)		NULL,
+	MobileNumber	CHAR(11)			NULL,
+	Gender			INT					NULL,
+	Role_Id			INT					NULL,
+	CreateDateTime  DATETIMEOFFSET		NULL,
+	IsActive		BIT					NULL,
+	CONSTRAINT [PK_Admin_Id] PRIMARY KEY CLUSTERED ([Id] ASC)
+)

@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Bit.Server.Data.EntityFrameworkCore" Version="11.0.0" />
+    <PackageReference Include="Bit.Server.Owin" Version="11.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.9" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Boomrang.Model\Boomrang.Model.csproj" />
+  </ItemGroup>
+
+</Project>

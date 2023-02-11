@@ -1,0 +1,66 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32328.378
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Boomrang.App", "Boomrang.App\Boomrang.App.csproj", "{2155603F-7696-4F5B-8D4E-68B9A38F14BF}"
+	ProjectSection(ProjectDependencies) = postProject
+		{BDACF634-34E8-4792-A0B9-6194CCB726F0} = {BDACF634-34E8-4792-A0B9-6194CCB726F0}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Boomrang.Service", "Boomrang.Service\Boomrang.Service.csproj", "{BDACF634-34E8-4792-A0B9-6194CCB726F0}"
+	ProjectSection(ProjectDependencies) = postProject
+		{BF0DB265-BA86-46AE-A095-2DE2038A43BB} = {BF0DB265-BA86-46AE-A095-2DE2038A43BB}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Boomrang.Data", "Boomrang.Data\Boomrang.Data.csproj", "{BF0DB265-BA86-46AE-A095-2DE2038A43BB}"
+	ProjectSection(ProjectDependencies) = postProject
+		{651D2936-96B0-49DC-859F-E09685BDEDE9} = {651D2936-96B0-49DC-859F-E09685BDEDE9}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Boomrang.Util", "Boomrang.Util\Boomrang.Util.csproj", "{23AA3BA1-97DA-4A96-9AFE-AAAA7ADCB8B5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Boomrang.Model", "Boomrang.Model\Boomrang.Model.csproj", "{651D2936-96B0-49DC-859F-E09685BDEDE9}"
+	ProjectSection(ProjectDependencies) = postProject
+		{23AA3BA1-97DA-4A96-9AFE-AAAA7ADCB8B5} = {23AA3BA1-97DA-4A96-9AFE-AAAA7ADCB8B5}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Items", "Items", "{B7A18CF8-BEEB-4EE6-B80C-CBE8C6146A90}"
+	ProjectSection(SolutionItems) = preProject
+		BitConfig.json = BitConfig.json
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2155603F-7696-4F5B-8D4E-68B9A38F14BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2155603F-7696-4F5B-8D4E-68B9A38F14BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2155603F-7696-4F5B-8D4E-68B9A38F14BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2155603F-7696-4F5B-8D4E-68B9A38F14BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BDACF634-34E8-4792-A0B9-6194CCB726F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDACF634-34E8-4792-A0B9-6194CCB726F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDACF634-34E8-4792-A0B9-6194CCB726F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDACF634-34E8-4792-A0B9-6194CCB726F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF0DB265-BA86-46AE-A095-2DE2038A43BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF0DB265-BA86-46AE-A095-2DE2038A43BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF0DB265-BA86-46AE-A095-2DE2038A43BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF0DB265-BA86-46AE-A095-2DE2038A43BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23AA3BA1-97DA-4A96-9AFE-AAAA7ADCB8B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23AA3BA1-97DA-4A96-9AFE-AAAA7ADCB8B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23AA3BA1-97DA-4A96-9AFE-AAAA7ADCB8B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23AA3BA1-97DA-4A96-9AFE-AAAA7ADCB8B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{651D2936-96B0-49DC-859F-E09685BDEDE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{651D2936-96B0-49DC-859F-E09685BDEDE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{651D2936-96B0-49DC-859F-E09685BDEDE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{651D2936-96B0-49DC-859F-E09685BDEDE9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0549611E-B535-49DE-B19F-F0288FC9DBD3}
+	EndGlobalSection
+EndGlobal
